@@ -7,13 +7,10 @@ class Solution:
             for j in range(n):
                 if isConnected[i][j] == 1 and j not in visited:
                     dfs(j)
-        
-        
         count = 0
         for i in range(n):
             if i not in visited:
                 count += 1
-                dfs(i)
-                
+                dfs(i) 
         return count
         
