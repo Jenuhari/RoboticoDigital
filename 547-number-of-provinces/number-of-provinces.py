@@ -9,10 +9,11 @@ class Solution:
                     dfs(j)
         
         
-        provinces = 0
+        count = 0
         for i in range(n):
             if i not in visited:
+                count += 1
                 dfs(i)
-                provinces += 1
-        return provinces
+                
+        return count
         
